@@ -1,6 +1,19 @@
 var ctx = document.getElementById('myChart').getContext('2d');
-
+let value =document.getElementById('cars');
 let Product = ['Red', 'Blue', 'Pink', 'Green', 'Purple', 'Orange'];
+let aaa=['456'];
+function showValue(e){
+    console.log(Product);
+}
+
+function AddValue(){
+    
+    aaa.push('123');
+    console.log(aaa);
+}
+AddValue();
+value.addEventListener("change",showValue,false);
+
 
 var myChart = new Chart(ctx, {
     type: 'line',
